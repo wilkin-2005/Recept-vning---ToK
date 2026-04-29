@@ -4,31 +4,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 div#main {
-    background-color: white;
-    border: 2px, solid, black;    
-    width: 1400px;
+    background-color: rgb(252, 252, 252); 
+    width: 1280px;
     /* height: 960px; */
     min-height: 1000px;
 }
 
-h1 {
+div#topImage {
+    height: 500px;
+    background-color: blanchedalmond;
+}
+
+div#bodyText {
+    margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
+
+    /* border: 1px, dashed, black; /**/
+}
+
+div.noticeBox {
+    background-color: rgb(235, 235, 235);
+    padding: 18px;
+    font-size: 17px;
+}
+
+h1 {
     font-style: bold;
     color: rgb(161, 0, 0);
-    font-size: 26px;
+    font-size: 28px;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-style: bold;
     color: black;
-    font-size: 24px;
+    font-size: 25px;
 }
 
-div#txtBox {
-    margin: 25px;
-    border: 1px, solid, black;
+ul, ol {
+    line-height: 2;
+    margin: 10px;
+    padding: 0;
+    list-style-position: inside;
 }
