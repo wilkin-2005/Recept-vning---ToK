@@ -1,0 +1,6 @@
+
+Jag började kolla på designen av pannkakssidan och följde den.
+Jag ändrade background-color på body:n till en en guldgul färg till en början. Senare ändrade jag dock till samma färg som på pannkakssidan.
+Jag skapade den vita rutan i mitten där själva receptet och allt annat låg.
+Sedan fortsatte jag bara innåt med att fixa rubrikerna så lika som möjligt, sedan den där gråa inforutan och brödtexten.
+Jag använde mig mycket av W3Schools för att påminna mig om hur man gör saker, framförallt inom CSS men även inom HTML.
