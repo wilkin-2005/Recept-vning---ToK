@@ -63,25 +63,3 @@ img {
     width: 100%;
     object-fit: cover;
 }
-
-
-/* W3Schools Float Example (didn't work for unknown reasons)
-
-div.imageColumn {
-    float: left;
-    padding: 5px;
-    width: 50%;
-    background-color: red;
-}
-
-/* div.imagesRow {
-    height: 465px;
-    border: 1px, dashed, black;
-} * /
-
-
-div.imagesRow::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
