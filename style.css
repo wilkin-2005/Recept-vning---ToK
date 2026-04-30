@@ -10,13 +10,13 @@ body {
 div#main {
     background-color: rgb(252, 252, 252); 
     width: 1280px;
-    /* height: 960px; */
     min-height: 1000px;
 }
 
 div#topImage {
-    height: 500px;
     background-color: blanchedalmond;
+    height: 500px;
+    margin: 2px;
 }
 
 div#bodyText {
@@ -50,3 +50,34 @@ ul, ol {
     padding: 0;
     list-style-position: inside;
 }
+
+div.imagesRow {
+    display: flex;
+}
+
+div.imageColumn {
+    flex: 50%;
+    padding: 5px;
+}
+
+
+/* W3Schools Float Example (didn't work for unknown reasons)
+
+div.imageColumn {
+    float: left;
+    padding: 5px;
+    width: 50%;
+    background-color: red;
+}
+
+/* div.imagesRow {
+    height: 465px;
+    border: 1px, dashed, black;
+} * /
+
+
+div.imagesRow::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
