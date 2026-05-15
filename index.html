@@ -10,53 +10,63 @@
     <meta name="author" content="Wilmer Kindstedt">
 </head>
 <body>
-    <div id="main">
+    <div id="contentBlock">
+
+        <!-- <header>
+            <!-- Logga och navigation hamnar här - ->
+        </header> -->
 
         <div class="topImage">
             <img src="images/img_pancakes1.jpg" style="height: 500px;" alt="En tallrik med pannkakor med lite grädde och några hallon.">
         </div>
 
-        <div id="bodyText">
+        <main id="main">
 
             <h1>Enkelt recept på pannkakor</h1>
 
             <div class="noticeBox">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</div>
 
-            <h2>Ingedienser</h2>
-            <p>För 4 portioner</p>
-            <ul>
-                <li>2 1/2 dl vetemjöl</li>
-                <li>1/2 tsk salt</li>
-                <li>6 dl mjölk</li>
-                <li>3 ägg</li>
-                <li>smör (till stekning)</li>
-                <li>sylt, bär eller frukt till servering</li>
-            </ul>
-
-            <h2>Så här gör du</h2>
-            <ol>
-                <li>Blanda mjöl och salt i en bunke.</li>
-                <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-                <li>Vispa i resten av mjölken och äggen.</li>
-                <li>Låt smeten vila ca 10 minuter.</li>
-                <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
-                <li>Servera med sylt, bär eller frukt</li>
-            </ol>
+            <section aria-labelledby="ingredients">
+                <h2 id="ingredients">Ingredienser</h2>
+                <p>För 4 portioner</p>
+                <ul>
+                    <li>2 1/2 dl vetemjöl</li>
+                    <li>1/2 tsk salt</li>
+                    <li>6 dl mjölk</li>
+                    <li>3 ägg</li>
+                    <li>smör (till stekning)</li>
+                    <li>sylt, bär eller frukt till servering</li>
+                </ul>
+            </section>
             
-            <h2>Serveringsförslag</h2>
-            <div class="imagesRow">
-                <div class="imageColumn">
-                    <img src="images/img_pancakes2.jpg" style="height: 467px;" alt="Pannkakor på en tallrik vikta över varandra.">
-                </div>
-                <div style="width: 24px;">
+            <section aria-labelledby="instruktions">
+                <h2 id="instruktions">Så här gör du</h2>
+                <ol>
+                    <li>Blanda mjöl och salt i en bunke.</li>
+                    <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+                    <li>Vispa i resten av mjölken och äggen.</li>
+                    <li>Låt smeten vila ca 10 minuter.</li>
+                    <li>Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna.</li>
+                    <li>Servera med sylt, bär eller frukt</li>
+                </ol>
+            </section>
 
-                </div>
-                <div class="imageColumn">
-                    <img src="images/img_pancakes3.jpg" style="height: 467px;" alt="Tre tallrikar med pannkakor, en klick grädde och en apelsinskiva på dem.">
-                </div>
-            </div>
+            <section aria-labelledby="servingSuggestion">
+                <h2 id="servingSuggestion">Serveringsförslag</h2>
+                <div class="imagesRow">
+                    <div class="imageColumn">
+                        <img src="images/img_pancakes2.jpg" style="height: 467px;" alt="Pannkakor på en tallrik vikta över varandra.">
+                    </div>
+                    <div style="width: 24px;">
 
-        </div>
+                    </div>
+                    <div class="imageColumn">
+                        <img src="images/img_pancakes3.jpg" style="height: 467px;" alt="Tre tallrikar med pannkakor, en klick grädde och en apelsinskiva på dem.">
+                    </div>
+                </div>
+            </section>
+
+        </main>
 
     </div>
 </body>

@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-div#main {
+div#contentBlock {
     background-color: rgb(252, 252, 252); 
     width: 1280px;
     min-height: 1000px;
@@ -18,7 +18,7 @@ div#main {
     margin: 1px;
 }
 
-div#bodyText {
+main {
     margin: 50px;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
