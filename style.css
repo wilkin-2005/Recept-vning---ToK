@@ -52,19 +52,19 @@ body {
 
 div#contentBlock {
     background-color: rgb(252, 252, 252); 
-    width: 1280px;
-    /* min-height: 1000px;  KAN NOG TAS BORT  */
+    width: 1280px; /* alternativt 80rem */
 }
 
 .topImage {
-    height: 500px;
     margin: 1px;
 }
 
 main {
-    margin: 50px;
+    margin: max(2.6vw, 24px); /* 24px kommer från mellanrummet mellan bilderna längst ner */
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+
+/* fortsätt ändra enheter/mått härifrån! */
 
 div.noticeBox {
     background-color: rgb(235, 235, 235);
