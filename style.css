@@ -1,4 +1,47 @@
 
+/***** ***** ***** Style reset ***** ***** *****/
+/* https://codepen.io/kevinpowell/pen/QWxBgZX */
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+html {
+  color-scheme: light;
+}
+
+/* min body height */
+body {
+  min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+/***** ***** ******* ***** ***** 
+ ***** ***** Styling ***** *****
+ ***** ***** ******* ***** *****/
+
 body {
     background-color: rgb(220, 172, 172);
     display: flex;
@@ -10,7 +53,7 @@ body {
 div#contentBlock {
     background-color: rgb(252, 252, 252); 
     width: 1280px;
-    min-height: 1000px;
+    /* min-height: 1000px;  KAN NOG TAS BORT  */
 }
 
 .topImage {
@@ -33,15 +76,19 @@ div.noticeBox {
 h1 {
     color: rgb(161, 0, 0);
     font-size: 28px;
-    font-style: bold;
     font-weight: 700;
+    margin: 19px 0;
 }
 
 h2 {
     color: black;
     font-size: 24px;
-    font-style: bold;
     font-weight: 700;
+    margin: 20px 0;
+}
+
+p {
+    margin: 16px 0;
 }
 
 ul, ol {
@@ -49,6 +96,10 @@ ul, ol {
     padding: 0;
     list-style-position: inside;
     line-height: 2;
+}
+
+li {
+    margin-bottom: 0px;
 }
 
 img {
