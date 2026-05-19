@@ -1,5 +1,5 @@
 
-/***** ***** ***** Style reset ***** ***** *****/
+/**** Style reset ****/
 /* https://codepen.io/kevinpowell/pen/QWxBgZX */
 
 /* makes sizing simpler */
@@ -36,11 +36,14 @@ video {
   max-width: 100%;
 }
 
+/*
+Rubriker/kategorier jag borde lägga till för att strukturera min kod.
 
-
-/***** ***** ******* ***** ***** 
- ***** ***** Styling ***** *****
- ***** ***** ******* ***** *****/
+GLOBAL
+LAYOUT
+TYPOGRAPHY
+COMPONENTS
+*/
 
 body {
     background-color: rgb(220, 172, 172);
@@ -64,42 +67,33 @@ main {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-/* fortsätt ändra enheter/mått härifrån! */
-
 div.noticeBox {
     background-color: rgb(235, 235, 235);
-    padding: 18px;
-    font-size: 17px;
-    font-weight: 400;
+    padding: 1.15rem;
 }
 
 h1 {
     color: rgb(161, 0, 0);
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
-    margin: 19px 0;
+    margin: 0.68em 0;
 }
 
 h2 {
     color: black;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 0.83em 0;
 }
 
 p {
-    margin: 16px 0;
+    margin: 1rem 0;
 }
 
 ul, ol {
-    margin: 10px;
-    padding: 0;
+    margin: 0.625rem;
     list-style-position: inside;
     line-height: 2;
-}
-
-li {
-    margin-bottom: 0px;
 }
 
 img {
@@ -113,5 +107,4 @@ div.imagesRow {
 
 div.imageColumn {
     flex: 50%;
-    padding: 0px;
 }
