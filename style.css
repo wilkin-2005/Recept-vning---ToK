@@ -65,7 +65,7 @@ body {
 
 .contentBlock {
     background-color: rgb(252, 252, 252); 
-    width: 1280px; /* alternativt 80rem */
+    max-width: 1280px; /* alternativt 80rem */
     margin: auto;
     padding-bottom: 24px;
 }
