@@ -1,5 +1,5 @@
 
-/**** Style reset ****/
+/**** RESET ****/
 /* https://codepen.io/kevinpowell/pen/QWxBgZX */
 
 /* makes sizing simpler */
@@ -45,21 +45,29 @@ TYPOGRAPHY
 COMPONENTS
 */
 
+
+/* Varibaler */
+
+:root {
+    /* font-weight */
+    --fw-header: 700;
+}
+
+
+/**** GLOBAL ****/
+
 body {
     background-color: rgb(220, 172, 172);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
-div#contentBlock {
+.contentBlock {
     background-color: rgb(252, 252, 252); 
     width: 1280px; /* alternativt 80rem */
-}
-
-.topImage {
-    margin: 1px;
+    /* margin: auto; */
+    padding-bottom: 36px;
 }
 
 main {
@@ -67,44 +75,46 @@ main {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-div.noticeBox {
+.heading-1 {
+    font-weight: var(--fw-header);
+    color: rgb(161, 0, 0);
+    font-size: 1.75rem;
+    margin: 0.68em 0;
+}
+
+.heading-2 {
+    font-weight: var(--fw-header);
+    color: black;
+    font-size: 1.5rem;
+    margin: 0.83em 0;
+}
+
+.noticeBox {
     background-color: rgb(235, 235, 235);
     padding: 1.15rem;
 }
 
-h1 {
-    color: rgb(161, 0, 0);
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin: 0.68em 0;
-}
-
-h2 {
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0.83em 0;
-}
-
-p {
+.portions {
     margin: 1rem 0;
 }
 
-ul, ol {
+.list {
     margin: 0.625rem;
     list-style-position: inside;
     line-height: 2;
 }
 
-img {
+.recipe-image {
     width: 100%;
     object-fit: cover;
+    margin: auto;
+    padding: 1px;
 }
 
-div.imagesRow {
+.imagesRow {
     display: flex;
 }
 
-div.imageColumn {
+.imageColumn {
     flex: 50%;
 }

@@ -10,28 +10,36 @@
     <meta name="author" content="Wilmer Kindstedt">
 </head>
 <body>
-    <div id="contentBlock">
+    <!-- <header>
+        <h1>Bästa recepten i hela världen!</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <div class="contentBlock">
 
         <!-- <header>
             <!-- Logga och navigation hamnar här - ->
         </header> -->
 
-        <div class="topImage">
-            <img src="images/img_pancakes1.jpg" height="500" alt="En tallrik med pannkakor med lite grädde och några hallon.">
-        </div>
+        <img src="images/img_pancakes1.jpg" height="500" class="recipe-image topImage" alt="En tallrik med pannkakor. Ligger lite grädde och några hallon ovanpå.">
 
-        <main id="main">
+        <main aria-labelledby="mainHeader">
 
-            <h1>Enkelt recept på pannkakor</h1>
+            <h1 id="mainHeader" class="heading-1">Enkelt recept på pannkakor</h1>
 
             <div class="noticeBox">Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept.</div>
 
 
             <section aria-labelledby="ingredients">
-                <h2 id="ingredients">Ingredienser</h2>
+                <h2 id="ingredients" class="heading-2">Ingredienser</h2>
 
-                <p>För 4 portioner</p>
-                <ul>
+                <p class="portions">För 4 portioner</p>
+                <ul class="list">
                     <li>2 1/2 dl vetemjöl</li>
                     <li>1/2 tsk salt</li>
                     <li>6 dl mjölk</li>
@@ -42,9 +50,9 @@
             </section>
             
             <section aria-labelledby="instruktions">
-                <h2 id="instruktions">Så här gör du</h2>
+                <h2 id="instruktions" class="heading-2">Så här gör du</h2>
 
-                <ol>
+                <ol class="list">
                     <li>Blanda mjöl och salt i en bunke.</li>
                     <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
                     <li>Vispa i resten av mjölken och äggen.</li>
@@ -55,17 +63,15 @@
             </section>
 
             <section aria-labelledby="servingSuggestion">
-                <h2 id="servingSuggestion">Serveringsförslag</h2>
+                <h2 id="servingSuggestion" class="heading-2">Serveringsförslag</h2>
                 
                 <div class="imagesRow">
                     <div class="imageColumn">
-                        <img src="images/img_pancakes2.jpg" style="height: 467px;" alt="Pannkakor på en tallrik vikta över varandra.">
+                        <img src="images/img_pancakes2.jpg" height="467" class="recipe-image" alt="Pannkakor på en tallrik vikta över varandra.">
                     </div>
-                    <div style="width: 24px;">
-
-                    </div>
+                    <div style="width: 24px;"></div>
                     <div class="imageColumn">
-                        <img src="images/img_pancakes3.jpg" style="height: 467px;" alt="Tre tallrikar med pannkakor, en klick grädde och en apelsinskiva på dem.">
+                        <img src="images/img_pancakes3.jpg" height="467" class="recipe-image" alt="Tre tallrikar med pannkakor. Det är en klick grädde och en apelsinskiva på varje.">
                     </div>
                 </div>
             </section>
