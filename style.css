@@ -51,6 +51,9 @@ COMPONENTS
 :root {
     /* font-weight */
     --fw-header: 700;
+
+    /* colors */
+
 }
 
 
@@ -58,9 +61,6 @@ COMPONENTS
 
 body {
     background-color: rgb(220, 172, 172);
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 main {
@@ -68,18 +68,10 @@ main {
     background-color: rgb(252, 252, 252);
     max-width: 1280px;
     margin: auto;
-    /*
-    max-width: 1280px; /* alternativt 80rem 
-    margin: max(2.6vw, 24px);
-    padding-bottom: 24px;
-    */
 }
 
 article {
     padding-bottom: 24px;
-
-    /* margin: max(2.6vw, 24px); /* 24px kommer från mellanrummet mellan bilderna längst ner */
-    /* margin: 0 auto; */
 }
 
 .margin-sides {
@@ -103,7 +95,7 @@ h1, h2 {
     }
 }
 
-.noticeBox {
+.info-box {
     background-color: rgb(235, 235, 235);
     padding: 1.15rem;
 }
@@ -125,10 +117,10 @@ h1, h2 {
     padding: 1px;
 }
 
-.imagesRow {
+.image-row {
     display: flex;
 }
 
-.imageColumn {
+.image-column {
     flex: 50%;
 }
