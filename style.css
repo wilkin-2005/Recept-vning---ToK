@@ -63,30 +63,44 @@ body {
     /* align-items: center; */
 }
 
-.contentBlock {
-    background-color: rgb(252, 252, 252); 
-    max-width: 1280px; /* alternativt 80rem */
-    margin: auto;
-    padding-bottom: 24px;
-}
-
 main {
-    margin: max(2.6vw, 24px); /* 24px kommer från mellanrummet mellan bilderna längst ner */
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 252, 252);
+    max-width: 1280px;
+    margin: auto;
+    /*
+    max-width: 1280px; /* alternativt 80rem 
+    margin: max(2.6vw, 24px);
+    padding-bottom: 24px;
+    */
 }
 
-.heading-1 {
-    font-weight: var(--fw-header);
-    color: rgb(161, 0, 0);
-    font-size: 1.75rem;
-    margin: 0.68em 0;
+article {
+    padding-bottom: 24px;
+
+    /* margin: max(2.6vw, 24px); /* 24px kommer från mellanrummet mellan bilderna längst ner */
+    /* margin: 0 auto; */
 }
 
-.heading-2 {
+.margin-sides {
+    margin: 0 max(2.6vw, 24px);
+}
+
+h1, h2 {
     font-weight: var(--fw-header);
-    color: black;
-    font-size: 1.5rem;
-    margin: 0.83em 0;
+
+    &.heading-1 {
+        color: rgb(161, 0, 0);
+        font-size: 1.75rem;
+        margin-top: 0.68em;
+        margin-bottom: 0.68em;
+    }
+
+    &.heading-2 {
+        color: black;
+        font-size: 1.5rem;
+        margin: 0.83em 0;
+    }
 }
 
 .noticeBox {
