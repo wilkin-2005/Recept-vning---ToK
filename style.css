@@ -53,21 +53,28 @@ COMPONENTS
     --fw-header: 700;
 
     /* colors */
-
+    /* background */
+    --color-bg-1: rgb(220, 172, 172);
+    --color-bg-2:rgb(252, 252, 252);
+    /* headings */
+    --color-heading-1: rgb(161, 0, 0);
+    --color-heading-2: black;
+    /* other */
+    --color-info-box: rgb(235, 235, 235);
 }
 
 
 /**** GLOBAL ****/
 
 body {
-    background-color: rgb(220, 172, 172);
+    background-color: var(--color-bg-1);
 }
 
 main {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    background-color: rgb(252, 252, 252);
+    background-color: var(--color-bg-2);
     max-width: 1280px;
-    margin: auto;
+    margin-inline: auto;
 }
 
 article {
@@ -75,33 +82,32 @@ article {
 }
 
 .margin-sides {
-    margin: 0 max(2.6vw, 24px);
+    margin-inline: max(2.6vw, 24px);
 }
 
 h1, h2 {
     font-weight: var(--fw-header);
 
     &.heading-1 {
-        color: rgb(161, 0, 0);
+        color: var(--color-heading-1);
         font-size: 1.75rem;
-        margin-top: 0.68em;
-        margin-bottom: 0.68em;
+        margin-block: 0.68em;
     }
 
     &.heading-2 {
-        color: black;
+        color: var(--color-heading-2);
         font-size: 1.5rem;
-        margin: 0.83em 0;
+        margin-block: 0.83em;
     }
 }
 
 .info-box {
-    background-color: rgb(235, 235, 235);
+    background-color: var(--color-info-box);
     padding: 1.15rem;
 }
 
 .portions {
-    margin: 1rem 0;
+    margin-block: 1rem;
 }
 
 .list {
