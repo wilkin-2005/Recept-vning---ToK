@@ -70,6 +70,36 @@ body {
     background-color: var(--color-bg-1);
 }
 
+/**** MAIN HEADER ****/
+
+.main-navigation {
+    block-size: 5rem;
+    background-color: var(--color-bg-2);
+
+    font-size: 2rem;
+}
+
+.main-navigation ul {
+    list-style: none;
+    /* FLEXBOX */
+    display: flex;
+    justify-content: end;
+    
+}
+
+.nav-item {
+    background-color: lime;
+    /* align-self: flex-end; */
+}
+
+.main-navigation li:first-of-type,
+.main-navigation li:last-of-type {
+    background-color: tomato;
+    /* justify-items: start;     !!FUNKAR INTE!! */
+}
+
+/**** MAIN CONTENT ****/
+
 main {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     background-color: var(--color-bg-2);
@@ -115,6 +145,8 @@ h1, h2 {
     list-style-position: inside;
     line-height: 2;
 }
+
+/**** IMAGES ****/
 
 .recipe-image {
     width: 100%;
