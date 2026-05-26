@@ -72,31 +72,26 @@ body {
 
 /**** MAIN HEADER ****/
 
-.main-navigation {
-    block-size: 5rem;
+.nav-list {
     background-color: var(--color-bg-2);
-
-    font-size: 2rem;
-}
-
-.main-navigation ul {
     list-style: none;
+    min-block-size: 5rem;
+    font-size: 2rem;
+
     /* FLEXBOX */
     display: flex;
-    justify-content: end;
-    
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.nav-item {
-    background-color: lime;
-    /* align-self: flex-end; */
+.nav-list > * {
+    background-color: lightgreen;
 }
 
-.main-navigation li:first-of-type,
-.main-navigation li:last-of-type {
+/* .nav-list li:first-of-type,
+.nav-list li:last-of-type {
     background-color: tomato;
-    /* justify-items: start;     !!FUNKAR INTE!! */
-}
+} */
 
 /**** MAIN CONTENT ****/
 
