@@ -81,11 +81,20 @@ body {
     /* FLEXBOX */
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav-list > * {
-    background-color: lightgreen;
+    background-color: var(--color-info-box);
+    
+    /* Sprider ut alla flex-items jämnt och med samma bredd
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; */
+    /* shorthand:
+    flex: 1; */
+    /* Gör typ samma sak. Kräver att wrapping är avstängd. */
+    /* width/flex-basis: 100%; */
 }
 
 /* .nav-list li:first-of-type,
