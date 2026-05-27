@@ -1,4 +1,45 @@
 
+main {
+    padding-block-start: var(--main-margin);
+}
+
 .recipe-card {
-    border: 2px solid lime;
+    /* border: 2px solid lime; */
+    background-color: var(--color-info-box);
+    padding: 1rem;
+    display: grid;
+
+    h2 {
+        margin-block-start: 0;
+    }
+
+    img {
+        max-height: 200px;
+        width: 100%;
+        object-fit: cover;
+        margin-inline: auto;
+        order: -1;
+
+        transition: transform .3s;
+
+        &:hover {
+            /* border: 1px solid red; */
+            transform: scale(1.05);
+        }
+    }
+
+    p {
+        margin-block-start: 0.8rem;
+    }
+}
+
+.grid-even-columns {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.grid-even-columns {
+    margin-block-start: 2rem;
 }

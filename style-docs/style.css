@@ -36,16 +36,6 @@ video {
   max-width: 100%;
 }
 
-/*
-Rubriker/kategorier jag borde lägga till för att strukturera min kod.
-
-GLOBAL
-LAYOUT
-TYPOGRAPHY
-COMPONENTS
-*/
-
-
 /**** Varibaler ****/
 
 :root {
@@ -61,6 +51,9 @@ COMPONENTS
     --color-heading-2: black;
     /* other */
     --color-info-box: rgb(235, 235, 235);
+
+    /* margins */
+    --main-margin: max(2.6vw, 24px);
 }
 
 
@@ -68,6 +61,16 @@ COMPONENTS
 
 body {
     background-color: var(--color-bg-1);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /**** MAIN HEADER ****/
@@ -105,18 +108,14 @@ body {
 /**** MAIN CONTENT ****/
 
 main {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     background-color: var(--color-bg-2);
     max-width: 1280px;
     margin-inline: auto;
-}
-
-article {
-    padding-bottom: 24px;
+    padding-block-end: var(--main-margin);
 }
 
 .margin-sides {
-    margin-inline: max(2.6vw, 24px);
+    margin-inline: var(--main-margin);
 }
 
 h1, h2 {
