@@ -46,11 +46,12 @@ video {
     /* background */
     --color-bg-1: rgb(220, 172, 172);
     --color-bg-2:rgb(252, 252, 252);
+    --color-bg-3: rgb(235, 235, 235);
     /* headings */
     --color-heading-1: rgb(161, 0, 0);
     --color-heading-2: black;
     /* other */
-    --color-info-box: rgb(235, 235, 235);
+    --color-accent-1: aquamarine;
 
     /* margins */
     --main-margin: max(2.6vw, 24px);
@@ -82,28 +83,34 @@ a {
     min-block-size: 5rem;
     font-size: 2rem;
 
-    /* FLEXBOX */
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center; */
+    align-items: center;
 
     > * {
-        background-color: var(--color-info-box);
-        padding-inline: 1rem;
-        /* flex: 1; */
+        background-color: var(--color-bg-3);
+        margin-inline: 1rem;
+        padding-inline: 0.5rem;
+        padding-block-end: 0.2rem;
+        
+        border-radius: 1rem;
+        text-align: center;
+        font-weight: var(--fw-header);
     }
 
     > :first-child {
-        background-color: tomato;
         margin-right: auto;
+        min-width: 290px;
+        padding-inline-start: 0;
     }
 
     > :last-child {
-        background-color: aquamarine;
+        background-color: var(--color-accent-1);
         margin-left: auto;
+        min-width: 290px;
     }
 }
 
@@ -137,7 +144,7 @@ h1, h2 {
 }
 
 .info-box {
-    background-color: var(--color-info-box);
+    background-color: var(--color-bg-3);
     padding: 1.15rem;
 }
 
