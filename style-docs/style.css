@@ -74,6 +74,7 @@ a {
 }
 
 /**** MAIN HEADER ****/
+/****   FLEXBOX   ****/
 
 .nav-list {
     background-color: var(--color-bg-2);
@@ -85,25 +86,26 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-}
 
-.nav-list > * {
-    background-color: var(--color-info-box);
-    
-    /* Sprider ut alla flex-items jämnt och med samma bredd
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0; */
-    /* shorthand:
-    flex: 1; */
-    /* Gör typ samma sak. Kräver att wrapping är avstängd. */
-    /* width/flex-basis: 100%; */
-}
+    justify-content: center;
+    align-content: center;
 
-/* .nav-list li:first-of-type,
-.nav-list li:last-of-type {
-    background-color: tomato;
-} */
+    > * {
+        background-color: var(--color-info-box);
+        padding-inline: 1rem;
+        /* flex: 1; */
+    }
+
+    > :first-child {
+        background-color: tomato;
+        margin-right: auto;
+    }
+
+    > :last-child {
+        background-color: aquamarine;
+        margin-left: auto;
+    }
+}
 
 /**** MAIN CONTENT ****/
 
