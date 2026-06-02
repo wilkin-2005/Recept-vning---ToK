@@ -74,6 +74,20 @@ a {
     }
 }
 
+a.skiplink {
+    display: inline-block;
+    color: #555;
+    background: #fff;
+    padding: .5em;
+    position: absolute;
+    left: -99999rem;
+    z-index: 100;
+
+    &:focus {
+        left: 0;
+    }
+}
+
 /**** MAIN HEADER ****/
 /****   FLEXBOX   ****/
 
