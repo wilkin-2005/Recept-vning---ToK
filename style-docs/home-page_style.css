@@ -1,34 +1,52 @@
 
 main {
-    height: 1000px;
+    min-height: 1000px;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/1280/480");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/1280/500");
+    /* height: 50%; */
+    height: 500px;
+    position: relative;
 
-    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+
+    margin: 1px;
 }
 
 .hero-text {
     text-align: center;
-    position: absolute;
+    position: absolute;  
     top: 50%;
     left: 50%;
+    /* inset: 0; */
     transform: translate(-50%, -50%);
     color: white;
 
-    h1 {
+    h2 {
+        margin-block: 0.68em;
         color: white;
+        font-size: 2.5rem;
+        font-weight: var(--fw-header);
+    }
+
+    p, a {
+        color: white;
+        font-size: 1.5rem;
     }
 
     button {
-        background-color: var(--color-bg-3);
+        background-color: hsla(0, 0%, 50%, 0.50);
         border-radius: 1rem;
+        border: 1px solid black;
         padding: 0.7rem;
         margin-block-start: 1rem;
     }
+}
+
+.paragraph {
+    line-height: 1.5;
+    margin-block-end: 1rem;
 }

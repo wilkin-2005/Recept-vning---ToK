@@ -36,11 +36,16 @@ video {
   max-width: 100%;
 }
 
-/**** Varibaler ****/
+
+
+/***************
+    Varibaler
+***************/
 
 :root {
     /* font-weight */
     --fw-header: 700;
+    --fw-paragraph: 400;
 
     /* colors */
     /* background */
@@ -48,10 +53,10 @@ video {
     --color-bg-2:rgb(252, 252, 252);
     --color-bg-3: rgb(235, 235, 235);
     /* headings */
-    --color-heading-1: rgb(161, 0, 0);
-    --color-heading-2: black;
+    --color-heading-1: oklch(44.52% 0.1827 29.223);
+    --color-heading-2: oklch(0% 0 0);
     /* other */
-    --color-accent-1: aquamarine;
+    --color-accent-1: oklch(91.501% 0.13038 169.036);
 
     /* margins */
     --main-margin: max(2.6vw, 24px);
@@ -93,7 +98,7 @@ a.skiplink {
 
 .nav-list {
     /* lokala variabler */
-    --first-last-child-width: 295px;
+    --first-last-child-width: 325px;
 
     background-color: var(--color-bg-2);
     min-block-size: 5rem;
@@ -105,6 +110,13 @@ a.skiplink {
     gap: 1rem;
     gap: 1vw;
     align-items: center;
+
+    .header-logo {
+        height: 2.5rem;
+        min-width: 3rem;
+        display: inline;
+        object-position: 2px 0.2rem;
+    }
 
     > * {
         background-color: var(--color-bg-3);
