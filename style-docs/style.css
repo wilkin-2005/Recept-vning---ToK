@@ -107,8 +107,7 @@ a.skiplink {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    gap: 1vw;
+    gap: 0.64vw;
     align-items: center;
 
     .header-logo {
@@ -127,37 +126,20 @@ a.skiplink {
         border-radius: 1rem;
         text-align: center;
         font-weight: var(--fw-header);
+        font-size: clamp(1rem, 1.6vw, 2rem);
     }
 
     > :first-child {
         margin-right: auto;
         min-width: var(--first-last-child-width);
         padding-inline-start: 0;
+        font-size: 2rem;
     }
 
     > :last-child {
         background-color: var(--color-accent-1);
         margin-left: auto;
         min-width: var(--first-last-child-width);
-    }
-
-    @media (width  < 1350px) {
-        /* background-color: red; */
-        --first-last-child-width: auto;
-        /* gap: 1vw; */
-        font-size: min(3vw, 2rem);
-
-        > * {
-            /* margin-right: 0; */
-            margin-inline: 0;
-        }
-    }
-
-    @media (width < 730px) {
-        > :first-child, > :last-child {
-            order: -1;
-            min-width: 45%;
-        }
     }
 
 }
