@@ -43,21 +43,24 @@ video {
 ***************/
 
 :root {
+    /* TEXT */
     /* font-weight */
     --fw-header: 700;
     --fw-paragraph: 400;
 
-    /* colors */
+    /* COLORS */
     /* background */
-    --color-bg-1: rgb(220, 172, 172);
-    --color-bg-2:rgb(252, 252, 252);
-    --color-bg-3: rgb(235, 235, 235);
+    --color-bg-1: oklch(78.8% 0.0564 18.335);
+    --color-bg-2:oklch(99.107% 0.00011 271.152);
+    --color-bg-3: oklch(94.007% 0.00011 271.152);
     /* headings */
     --color-heading-1: oklch(44.52% 0.1827 29.223);
     --color-heading-2: oklch(0% 0 0);
     /* other */
     --color-accent-1: oklch(91.501% 0.13038 169.036);
+    --color-accent-2: color-mix(in oklch, var(--color-heading-1), oklch(80% 0 0) );
 
+    /* OTHER VARIABLES */
     /* margins */
     --main-margin: max(2.6vw, 24px);
 }
@@ -97,69 +100,62 @@ a.skiplink {
 /****   FLEXBOX   ****/
 
 .nav-list {
-    /* lokala variabler */
-    --first-last-child-width: 325px;
-
+    min-height: 4rem;
     background-color: var(--color-bg-2);
-    min-block-size: 5rem;
     list-style: none;
-    font-size: 2rem;
 
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
-    gap: 1vw;
+    justify-content: space-between;
     align-items: center;
+
+    .nav-item {
+        /* background-color: var(--color-bg-3); */
+        border-radius: 1rem;
+
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
+        font-weight: var(--fw-header);
+        text-align: center;
+        white-space: nowrap;
+
+        a {
+            cursor: pointer;
+        }
+    }
 
     .header-logo {
         height: 2.5rem;
         min-width: 3rem;
         display: inline;
-        object-position: 2px 0.2rem;
-    }
-
-    > * {
-        background-color: var(--color-bg-3);
-        margin-inline: 1rem;
-        padding-inline: 0.5rem;
-        padding-block: 0.3rem;
-        
-        border-radius: 1rem;
-        text-align: center;
-        font-weight: var(--fw-header);
+        object-position: -0.25rem 0.25rem;
     }
 
     > :first-child {
-        margin-right: auto;
-        min-width: var(--first-last-child-width);
-        padding-inline-start: 0;
-        padding-block: 0 0.2rem;
-        margin-inline-end: auto;
-        min-width: 290px;
-    }
+        width: 23.75rem;
 
-    > :last-child {
-        background-color: var(--color-accent-1);
-        margin-left: auto;
-        min-width: var(--first-last-child-width);
-    }
-
-    @media (width  < 1350px) {
-        /* background-color: red; */
-        --first-last-child-width: auto;
-        /* gap: 1vw; */
-        font-size: min(3vw, 2rem);
-
-        > * {
-            /* margin-right: 0; */
-            margin-inline: 0;
+        .nav-item {
+            font-size: 2rem;
         }
     }
 
-    @media (width < 730px) {
-        > :first-child, > :last-child {
-            order: -1;
-            min-width: 45%;
+    > :nth-child(2) {
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    > :last-child {
+        width: 23.75rem;
+
+        img {
+            max-width: 3rem;
+            margin-left: auto;
+            margin-right: 0.5rem;
+        }
+
+        @media (width < 1280px) {
+            max-width: 3rem;
         }
     }
 
