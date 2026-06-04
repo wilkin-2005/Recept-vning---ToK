@@ -13,19 +13,41 @@ textarea {
 form {
     display: grid;
     gap: 1rem;
+    margin-block-end: 3rem;
 
     span {
         color: crimson; 
     }
-}
 
-.form-group {
-    display: grid;
-    gap: 0.5rem;
-}
+    .form-group {
+        display: grid;
+        gap: 0.5rem;
+        max-width: 600px;
+    }
 
-textarea {
-    resize: none;
+    label {
+        font-weight: bold;
+    }
+
+    textarea,
+    input,
+    select,
+    button {
+        padding: 0.5rem;
+        background-color: var(--color-bg-3);
+        accent-color: var(--color-accent-2);
+        border: 2px solid black;
+        border-radius: 1rem;
+
+        resize: none;
+    }
+
+    button {
+        max-width: 12rem;
+        background-color: var(--color-accent-2);
+        color: contrast-color(var(--color-accent-2));
+        font-weight: bold;
+    }
 }
 
 
