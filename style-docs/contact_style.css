@@ -1,0 +1,47 @@
+
+/***************
+   Formuläret
+***************/
+
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+
+    span {
+        color: crimson; 
+    }
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/*********************
+   Kontaktuppgifter
+*********************/
+
+address {
+    font-style: italic;
+
+    a {
+        text-decoration: underline;
+        color: var(--color-heading-1);
+    }
+
+    b {
+        font-weight: bold;
+    }
+}

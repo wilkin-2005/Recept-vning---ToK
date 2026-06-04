@@ -58,7 +58,7 @@ video {
     --color-heading-2: oklch(0% 0 0);
     /* other */
     --color-accent-1: oklch(91.501% 0.13038 169.036);
-    --color-accent-2: color-mix(in oklch, var(--color-heading-1), oklch(80% 0 0) );
+    --color-accent-2: color-mix(in oklch, var(--color-heading-1), oklch(70% 0 0) );
 
     /* OTHER VARIABLES */
     /* margins */
