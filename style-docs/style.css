@@ -105,18 +105,18 @@ a.skiplink {
     list-style: none;
 
     display: flex;
-    gap: 4rem;
+    gap: 1rem;
     justify-content: space-around;
     align-items: center;
 
     .nav-item {
-        background-color: var(--color-bg-3);
+        /* background-color: var(--color-bg-3); */
         border-radius: 1rem;
 
-        font-size: clamp(1.5rem, 1.6vw, 2rem);
+        font-size: clamp(1.2rem, 1.5vw, 2rem);
         font-weight: var(--fw-header);
         text-align: center;
-        line-height: 3rem;
+        white-space: nowrap;
 
         a {
             cursor: pointer;
@@ -146,32 +146,15 @@ a.skiplink {
     }
 
     > :last-child {
-        /* width: 20%; */
-
-        .nav-item, a {
-            background-color: var(--color-accent-2);
-            color: #fff;
-        }
+        width: 23.75rem;
 
         img {
-            display: none;
+            max-width: 3rem;
+            margin-left: auto;
         }
-        
-        @media (width < 1440px) {
-            height: 48px;
 
-            .nav-item {
-                background-color: var(--color-bg-2);
-            }
-
-            a {
-                visibility: hidden;
-            }
-
-            img {
-                display: block;
-                max-height: 48px;
-            }
+        @media (width < 1280px) {
+            max-width: 3rem;
         }
     }
 
