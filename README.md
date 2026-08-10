@@ -3,7 +3,7 @@
 
 The first project I worked on during the Frontend education at Lexicon.
 
-It is a website for food recipes called "Koltrastens Recept" (swedish for "The Blackbird's Recipies") where the user can browse for recipies and view ingredients and instructions for a recipe of their chosing.
+It is a website for food recipes called **Koltrastens Recept** (swedish for **"The Blackbird's Recipies"**) where the user can browse for recipies and view ingredients and instructions for a recipe of their chosing.
 
 It's build using only HTML and CSS and therefore has no functioning interactivity in for example the contact form. The website also uses [Lorem Picsum](https://picsum.photos/) for random placeholder images.
 
@@ -11,7 +11,9 @@ It's build using only HTML and CSS and therefore has no functioning interactivit
 > The website is entirely in Swedish, as well as most code comments and Git Commit messages.
 
 ---
+
 ![Screenshot of "The Blackbird's Recipies" homepage](./images/website_screenshot_1.png)
+
 ---
 
 
@@ -67,6 +69,6 @@ git clone https://github.com/wilkin-2005/Receptovning.git
 - Design inspiration from [Recept.se](https://recept.se/) and [Köket.se](https://www.koket.se/)
 - Help with CSS lenght units from [whatunit.com](https://whatunit.com/)
 
-
 ---
+
 ![Screenshot of "The Blackbird's Recipies" page with all recipies listed](./images/website_screenshot_2.png)
