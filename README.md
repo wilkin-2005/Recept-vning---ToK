@@ -1,5 +1,5 @@
 
-# 🐦‍⬛ Koltrastens Recept | Recipe exercise from Frontend education
+# 🐦‍⬛ Koltrastens Recept | Frontend education projekt
 
 The first project I worked on during the Frontend education at Lexicon.
 
@@ -8,7 +8,7 @@ It is a website for food recipes called "Koltrastens Recept" (swedish for "The B
 It's build using only HTML and CSS and therefore has no functioning interactivity in for example the contact form. The website also uses [Lorem Picsum](https://picsum.photos/) for random placeholder images.
 
 > [!NOTE]
-> The website is entirely in Swedish, as well as most code comments and the Git Commit messages.
+> The website is entirely in Swedish, as well as most code comments and Git Commit messages.
 
 ---
 ![Screenshot of "The Blackbird's Recipies" homepage](./images/website_screenshot_1.png)
@@ -35,7 +35,7 @@ It's build using only HTML and CSS and therefore has no functioning interactivit
 
 ## 📦 Installation
 
-1. Clone the repository or download ZIP from GitHub.
+1. Clone the repository or download the ZIP-file from GitHub.
 ```bash
 git clone https://github.com/wilkin-2005/Receptovning.git
 ```
@@ -47,7 +47,7 @@ git clone https://github.com/wilkin-2005/Receptovning.git
 
 ## 🪳 Known Issues
 
-- The responsivness on the header isn't perfect and starts overflowning at a viewport width of 678px or less.
+- The responsivness on the header isn't great and starts overflowning at a viewport width of just 678px or less.
 - If you try to submit the contact form the website will crash.
 
 
@@ -65,6 +65,7 @@ git clone https://github.com/wilkin-2005/Receptovning.git
 - Lorem Ipsum paragraphs from [Lipsum Generator](https://www.lipsum.com/)
 - Pancake recipe from my [teachers at Lexicon](https://www.figma.com/design/jN5rbXkvzz9K1q20Kj0wtL/Pannkakor?node-id=0-1&p=f)
 - Design inspiration from [Recept.se](https://recept.se/) and [Köket.se](https://www.koket.se/)
+- Help with CSS lenght units from [whatunit.com](https://whatunit.com/)
 
 
 ---
