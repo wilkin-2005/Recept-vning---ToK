@@ -1,5 +1,5 @@
 
-# 🐦‍⬛ Koltrastens Recept | Frontend education projekt
+# 🐦‍⬛ Koltrastens Recept | Frontend education project
 
 The first project I worked on during the Frontend education at Lexicon.
 
